@@ -1,26 +1,31 @@
 //EMPTY ARRARY
 let library = [];
 
+
+let book1 = {titile:"The Great Gatsby", author:"F. Scott Fitzgerald", yearPublishe:1925 , available: true}
+let book2 = {titile:"To Kill a Mockingbird", author:"Harper lee", yearPublishe:1950 , available:true}
+let book3 = {titile:"1984", author:"George Owell", yearPublishe:1949 , available: true}
+let book4 = {titile:"Pride and Prejudice", author:"Jane Austen", yearPublishe:1813 , available: true};
+
 //adding books to the library
-console.log(library);
-library.push("the Great Gatsby", "F.Scot Fitzgerald", 1925, "To Kill a Mockingbird", "harper lee", 1960, "1984", "George Orwell", 1949, "Pride and Prejudice", "Jane Austen", 1813);
+library.push(book1, book2, book3, book4)
 console.log(library);
 
 //availability of"1984"
 console.log(library.includes("1984"));
 
 //removing "pride and prejudice" from the library
-let newArrary = library.splice(9, 1);
+library.splice(3, 1);
 console.log(library);
-console.log(newArrary);
 
-//checking if 
+
+// //checking if 
 console.log(newArrary.includes("The Great Gatsby"));
 
-//borrow the first book
+// //borrow the first book
 library.shift()
 console.log(library);
 
-//adding a new book to the library
-library.unshift("The Catcher in the Rye", "J.D.Salinger", 1951); 
-console.log(library);
+// //adding a new book to the library
+// library.unshift("The Catcher in the Rye", "J.D.Salinger", 1951); 
+// console.log(library);
